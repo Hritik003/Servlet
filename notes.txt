@@ -1,1 +1,85 @@
 JSP -  Java Server Pages
+whenever you use JSP, it gets converted into Servlet.
+
+
+-->directive is used for importing any packages <%@page import = " java.util.*">
+-->declaration is used for any declaration that is needed 
+
+	<%!
+	(which means not service) 
+		int value or anything;
+	%>
+
+--> scriplet is used for the main logic 
+		
+		<% 
+			ex: String user = request.getParameter("username");
+				String pwd = request.getParameter("password");		
+				out.println("You have successfully logged into your session as :" + user);
+		%>		
+		
+--> Expression is used for  printing directly, by default it measures it as out.println <% = user%>	
+
+
+
+JSP DIRECTIVES	
+
+---> @page 
+---> @include ex: <%@ include file ="home.jsp" %> so the home.jsp file code gets added into the 
+												  present you are working with.
+---> @taglib
+
+--->the diff attributes we use here are:
+
+
+1
+buffer
+Specifies a buffering model for the output stream.
+
+2	
+autoFlush
+Controls the behavior of the servlet output buffer.
+
+3	
+contentType
+Defines the character encoding scheme.
+
+4	
+errorPage
+Defines the URL of another JSP that reports on Java unchecked runtime exceptions.
+
+5	
+isErrorPage
+Indicates if this JSP page is a URL specified by another JSP page's errorPage attribute.
+
+6	
+extends
+Specifies a superclass that the generated servlet must extend.
+
+7	
+import
+Specifies a list of packages or classes for use in the JSP as the Java import statement does for Java classes.
+
+8	
+info
+Defines a string that can be accessed with the servlet's getServletInfo() method.
+
+9	
+isThreadSafe
+Defines the threading model for the generated servlet.
+
+10	
+language
+Defines the programming language used in the JSP page.
+
+11	
+session
+Specifies whether or not the JSP page participates in HTTP sessions.
+
+12	
+isELIgnored
+Specifies whether or not the EL expression within the JSP page will be ignored.
+
+13	
+isScriptingEnabled
+Determines if the scripting elements are allowed for use.
