@@ -1,14 +1,13 @@
+
+
 package com.hrc;
 
 
 //the session is used in the web technology for storing the user's data.
 //A session begins as soon as you logg in to your site.
 // the moment you close/logg off our of your browser, the session ends.
-
-
 import java.io.IOException;
 import java.io.PrintWriter;
-
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;

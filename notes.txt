@@ -83,3 +83,14 @@ Specifies whether or not the EL expression within the JSP page will be ignored.
 13	
 isScriptingEnabled
 Determines if the scripting elements are allowed for use.
+
+
+
+Scopes in JSP
+1 request (HttServletRequest)
+2 response (HttpServletResponse)
+3 pagecontext (PageContext)
+4 out (JspWriter) ~ PrintWriter object
+5 session (HttpSession)
+6 application(ServletCOntext)
+7 config (ServletConfig)
